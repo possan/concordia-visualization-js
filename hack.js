@@ -136,10 +136,25 @@ window.addEventListener('load', () => {
     zoom_element.addEventListener('mousemove', e => dragZoom(e));
     document.getElementById('b1').addEventListener('click', () => redraw());
 
-    for(var fn=1; fn<=19; fn++) {
-        var opt = new Option(fn + '.json', fn + '.json');
-        file_element.options[file_element.options.length] = opt;
-    }
+    file_element.options[0] = new Option('01 Venus Earth Geocentric.txt', '01.json');
+    file_element.options[1] = new Option('02 Venus Earth Linklines.txt', '02.json');
+    file_element.options[2] = new Option('03 Venus Earth Mid-points of LI.txt', '03.json');
+    file_element.options[3] = new Option('04 Jupiter Uranus Loop Figure Conjunctions.txt', '04.json');
+    file_element.options[4] = new Option('05 Jupiter Uranus Linklines.txt', '05.json');
+    file_element.options[5] = new Option('06 Venus Earth Mars Pentagrams.txt', '06.json');
+    file_element.options[6] = new Option('07 Venus Earth Mars Conjunctions.txt', '07.json');
+    file_element.options[7] = new Option('08 Venus Earth Mars View Conjunctions.txt', '08.json');
+    file_element.options[8] = new Option('09 Jupiter Uranus Mars.txt', '09.json');
+    file_element.options[9] = new Option('10 Jupiter Saturn Neptune View Conjunctions.txt', '10.json');
+    file_element.options[10] = new Option('11 Jupiter Saturn Neptune Linklines.txt', '11.json');
+    file_element.options[11] = new Option('12 Jupiter Saturn Neptune Linklines with Midpoints.txt', '12.json');
+    file_element.options[12] = new Option('13 Rotation of figure Mid-points Me-Ma.txt', '13.json');
+    file_element.options[13] = new Option('14 Barycentre at Ju-Sa-oppositions.txt', '14.json');
+    file_element.options[14] = new Option('15 Mid-points of linklines Ma-Ju at Ve-Sa.txt', '15.json');
+    file_element.options[15] = new Option('16 Mercury in its orbit at Ve-Ma.txt', '16.json');
+    file_element.options[16] = new Option('17 Moon at Sun-Earth-View.txt', '17.json');
+    file_element.options[17] = new Option('18 LI Venus-Earth at Venus-Earth-View.txt', '18.json');
+    file_element.options[18] = new Option('19 Rotation of figure at Venus-Sun-View.txt', '19.json');
 
     loadFile('1.json');
     clear();
