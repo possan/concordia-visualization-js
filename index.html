@@ -1,0 +1,41 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        #c {
+            position: absolute;
+            left: 250px;
+            top: 20px;
+            width: 600px;
+            height: 600px;
+            background-color: #555;
+        }
+        #ctrl {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ctrl">
+        <p>
+            File: <select id="f"></select>
+        </p>
+        <p>
+            Skipping: <input type="range" id="r" min="1" max="100" value="1"></input> <span id="rl">1</span>
+        </p>
+        <p>
+            Zoom: <input type="range" id="z" min="1" max="100" value="10"></input> <span id="zl">10</span>
+        </p>
+        <p>
+            <button id="b1">REDRAW</button>
+        </p>
+    </div>
+    <canvas id="c" width="1200" height="1200"></canvas>
+    <script type="text/javascript" src="hack.js"></script>
+</body>
+</html>
